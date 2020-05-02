@@ -64,8 +64,8 @@ all_rostov_meteodata = data.frame()
     rostov_id =  rostov_around[["rostov"]] [["id"]] [ i]
     data = meteo_tidy_ghcnd(stationid = rostov_id,
                             var = "TAVG",
-                            date_min = "1993-01-01",
-                            date_max = "2001-12-31")
+                            date_min = "1997-01-01",
+                            date_max = "1998-12-31")
     all_rostov_meteodata =  bind_rows(all_rostov_meteodata, data)
     
   }
